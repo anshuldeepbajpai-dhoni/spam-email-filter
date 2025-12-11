@@ -1,12 +1,5 @@
-
----
-
-### 2.2 `requirements.txt`
-
-```text
+Flask==3.0.2
 pandas
 scikit-learn
 joblib
 gunicorn
-Flask
-scikit-learn>=1.0
