@@ -1,0 +1,12 @@
+
+---
+
+### 2.2 `requirements.txt`
+
+```text
+pandas
+scikit-learn
+joblib
+gunicorn
+Flask
+scikit-learn>=1.0
