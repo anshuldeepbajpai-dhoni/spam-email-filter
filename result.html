@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #e8f0fe;
+            padding: 40px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #ccc;
+            text-align: center;
+        }
+        .spam {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .ham {
+            color: green;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-decoration: none;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Prediction Result</h2>
+
+    {% if prediction == "SPAM" %}
+        <p class="spam">🚨 SPAM DETECTED!</p>
+    {% else %}
+        <p class="ham">✔ NOT SPAM</p>
+    {% endif %}
+
+    <p><b>Message:</b> {{ email }}</p>
+
+    <a href="/">Check Another Message</a>
+</div>
+
+</body>
+</html>
